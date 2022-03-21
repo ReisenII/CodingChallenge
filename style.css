@@ -1,0 +1,99 @@
+body {
+    /* Immagine di background */
+    background: url("img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Colore di sfondo se l'imagine non appare */
+    background-color: #000000;
+
+    font-family: Tahoma, sans-serif;
+}
+
+/* La scatola nera che contiene tutti gli elementi */
+.blackBox {
+    /* Colore nero con transparenza */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Dimensionamento del blocco nero */
+    margin: 2% 15%;
+    height: auto;
+
+    /* Arrotondamento degli angoli */
+    border-radius: 20px;
+}
+
+/* La scatola lime che contiene i pulsanti */
+.buttonBox {
+    background-color: #00dd00;
+    height: fit-content;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Blocco contenente il testo con i vari monopattini */
+.monopattiniDisponibili {
+    color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* Spaziamento del testo */
+.monopattiniDisponibili p{
+    margin: 6px auto;
+}
+
+/* Da qui ci sono le barre che indicano la carica */
+.greenBar {
+    background-color: hsl(120, 70%, 50%);
+    height: 30px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.yellowBar {
+    background-color: hsl(50, 50%, 50%);
+    height: 30px;
+    width: 35%;
+    border-radius: 5px;
+}
+
+.redBar {
+    background-color: hsl(0, 50%, 50%);
+    height: 30px;
+    width: 15%;
+    border-radius: 5px;
+}
+/* Fine delle barre di carica */
+
+/* Il logo lim in cima */
+#logo {
+    /* Rende l'elemento un elemento di blocco, dato che img è un inline */
+    display: block;
+
+    /* Allineamento al centro del div contenitore */
+    /* Se il margin bottom non è specificato, è uguale a top, idem per left e right */
+    margin: 0px auto;
+    padding-top: 70px;
+
+    /* Limite della dimensione dell'immagine come percentuale del blocco che contiene l'immagine
+    height settata in auto assicura che l'immagine mantiene le sue proporzioni corrette */
+    max-width: 20%;
+    height: auto;
+}
+
+/* Font e colore per i titoli */
+#mainTitle {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: #00dd00;
+}
+
+section h2 {
+    font-weight: 400;
+}
